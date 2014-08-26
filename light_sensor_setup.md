@@ -27,19 +27,19 @@ sudo python setup.py install
 
 ## Wiring Setup w/Hardware SPI on Pi and MCP3008 Chip
 ```
-VDD      -  	3.3V
-VREF     -     3.3V
-AGND     -     GND
-CLK		-     SCLK
-DOUT  	-     MISO
-DIN		-	   MOSI
-CS 		-	   CE0
+VDD   -  	3.3V
+VREF  -   3.3V
+AGND  -   GND
+CLK		-   SCLK
+DOUT  -   MISO
+DIN   -	  MOSI
+CS 		-	  CE0
 DGND     -  	GND
 ```
 
 ## Wiring Setup Apogee Pyranometer to the MCP3008 Chip
 ```
-Clear Wire	-	GND
-Black Wire	-	Negative Signal (GND)
+Clear Wire	 -	GND
+Black Wire	 -	Negative Signal (GND)
 Red Wire	   -	Positive Signal (CH0)
 ```
