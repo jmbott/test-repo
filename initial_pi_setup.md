@@ -13,16 +13,12 @@ ls
 * On Linux:
 
   - Before inserting SD card:
-
-      ```sh
-df -h
-```
+ 
+    df -h
 
   - Then again after inserting SD card:
 	
-      ```sh
-df -h
-```
+    df -h
 
   - Find the difference, should be similar to <tt>/dev/sdb1</tt>
 	
@@ -39,9 +35,9 @@ umount /dev/sdb1
 dd bs=4M if=2014-06-20-wheezy-raspbian.img of=/dev/sdd
 ```
 
-		* Replace the .img name and the /dev/sdd with your own
+	   * Replace the .img name and the /dev/sdd with your own
 
-		* To check on the status after using dd, in another terminal window
+       * To check on the status after using dd, in another terminal window
       ```sh 
 pkill -USR1 -n -x dd
 ```
@@ -52,7 +48,7 @@ pkill -USR1 -n -x dd
       ```sh 
 sync
 ```
-		This will verify all writing processes have finished
+	   This will verify all writing processes have finished
 		
   - Remove the SD card
 
