@@ -18,12 +18,13 @@ lsmod
 ## Install Python SPI Wrapper (py-spidev and python-dev)
 ```
 sudo apt-get install python2.7-dev
-mkdinstalling markdown linuxir py-spidev
+mkdir py-spidev
 cd py-spidev
 wget https://raw.github.com/doceme/py-spidev/master/setup.py
 wget https://raw.github.com/doceme/py-spidev/master/spidev_module.c
 sudo python setup.py install
 ```
+
 ## Wiring Setup w/Hardware SPI on Pi and MCP3008 Chip
 ```
 VDD      -  	3.3V
@@ -35,6 +36,7 @@ DIN		-	   MOSI
 CS 		-	   CE0
 DGND     -  	GND
 ```
+
 ## Wiring Setup Apogee Pyranometer to the MCP3008 Chip
 ```
 Clear Wire	-	GND
