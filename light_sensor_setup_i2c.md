@@ -41,3 +41,11 @@ sudo i2cdetect -y 1
 
 ## Wiring up the MCP3424 Chip
 
+ ```
+Pin 1 - CH1+ - Red Wire on Apogee Pyranometer
+Pin 2 - CH1- - Black Wire on Apogee Pyranometer
+Pin 5 - Vss  - GND
+Pin 6 - VDD  - 3.3V
+Pin 7 - SDA  - SDA on Pi (Pin 3, GPIO 0)
+Pin 8 - SCL  - SCL on Pi (Pin 5, GPIO 1)
+```
