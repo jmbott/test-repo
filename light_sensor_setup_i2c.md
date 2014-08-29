@@ -10,6 +10,7 @@ sudo nano /etc/modules
 i2c-bcm2708
 i2c-dev
 ```
+* Save and Exit, `ctrl o, Enter, ctrl x`
 * Reboot so changes can take effect,
 ```
 sudo reboot
@@ -27,6 +28,7 @@ sudo apt-get install i2c-tools
 sudo nano /etc/modprobe.d/raspi-blacklist.conf
 ```
  * Add a # in front of `blacklist spi-bcm2708` and `blacklist i2c-bcm2708`
+ * Save and Exit, `ctrl o, Enter, ctrl x`
 * Then reboot again,
 ```
 sudo reboot
