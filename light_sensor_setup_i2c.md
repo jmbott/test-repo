@@ -51,3 +51,4 @@ Pin 6 - VDD  - 3.3V
 Pin 7 - SDA  - SDA on Pi (Pin 3, GPIO 0)
 Pin 8 - SCL  - SCL on Pi (Pin 5, GPIO 1)
 ```
+* SCL and SDA both need pull up resisters, value from 5k-10k. Two 7.5k resisters are currently in use. 
