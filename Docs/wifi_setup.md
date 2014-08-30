@@ -1,4 +1,4 @@
-# Instructions on how to setup wifi on a Raspberry Pi
+# Instructions on how to setup wifi on a Pi
 
 * Install Wicd-curses
 ```
