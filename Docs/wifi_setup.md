@@ -11,15 +11,15 @@ sudo wicd-curses
 ```
  * A list of found wireless networks will be displayed.
  
-  i. If your WiFi dongle is not recognized, when you enter Wicd-curses `sudo wicd-curses`
+  i). If your WiFi dongle is not recognized, when you enter Wicd-curses `sudo wicd-curses`
 
-  ii. Press P (meaning Preferences)
+  ii). Press P (meaning Preferences)
 
-  iii. enter `wlan0` in the wireless interface field.
+  iii). enter `wlan0` in the wireless interface field.
 
-  iv. Press `F10` to save
+  iv). Press `F10` to save
 
-  v. Back on the main screen press `R` to refresh and you should be connected
+  v). Back on the main screen press `R` to refresh and you should be connected
   
  * Use the arrow keys to select your wifi network
  * Press the right arrow key to edit its properties
