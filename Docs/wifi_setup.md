@@ -17,7 +17,7 @@ sudo wicd-curses
 
   iii). enter `wlan0` in the wireless interface field.
 
-  iv). Press `F10` to save
+  iv). Press `F10` to save (Hint: You may have to use the `fn` key to avoid simply changing the volume)
 
   v). Back on the main screen press `R` to refresh and you should be connected
   
