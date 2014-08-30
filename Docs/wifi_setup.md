@@ -24,4 +24,8 @@ sudo wicd-curses
  * Use the arrow keys to select your wifi network
  * Press the right arrow key to edit its properties
  * Insert the WEP or WPA KEY and check auto connection
- * Press `F10` to save and your Pi should connect
+ * Press `F10` to save and your Pi should connect (Hint: You may have to use the `fn` key to avoid simply changing the volume)
+ * Press `Q` to Exit and reboot
+```
+sudo reboot
+```
