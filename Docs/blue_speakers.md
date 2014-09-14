@@ -50,7 +50,7 @@ sudo nano /etc/pulse/daemon.conf
  * Next modify config of specific device
   * Find the MAC address `hciconfig` under BD Address
 
-  ```
+ ```
 sudo nano /var/lib/bluetooth/<bluetooth mac address>/config
 ```
 
