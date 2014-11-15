@@ -16,6 +16,7 @@ ls /dev/tty.*
 screen /dev/tty.usbserial-FTH144JL 9600
 ```
 
-* You can check if the XBee is ready to recieve commands by typing `+++` and not pressing return.
- * After a few moments the XBee should report back and say `OK`
+* You can enter command mode by typing `+++` and not pressing return.
+ * After a few moments the XBee should report back and say `OK`.
+ * In command mode the Xbee will be able to recieve commands.
 * To exit screen press `control-a` then `control-\` then `y`.
