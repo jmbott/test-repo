@@ -75,3 +75,27 @@ Destination address low       ATDL                <Coordinator Address>
 * To check the edited values use the commands without parameters. 
 * Remember to save before disconnecting. 
 
+## XBee I/O Features
+
+The XBee radios can be used alone or with an additional microcomputer. When used alone they have limited capabilities. They have no PWM outputs but have a few pins that can be used as digintal inputs, digital outputs, and analog inputs. 
+
+* Some configurable pins have other hardware applications for optional duties. 
+
+```
+|Pin name|          |Physical pin #|    |AT command|        |Other functions|
+DIO0,AD0            20                  D0                  Analog input, Commissioning Button
+DIO1,AD1            19                  D1                  Analog input
+DIO2,AD2            18                  D2                  Analog input
+DIO3,AD3            17                  D3                  Analog input
+DIO4                11                  D4                  
+DIO5                15                  D5                  Association indicator
+DIO6                16                  D6                  RTS
+DIO7                12                  D7                  CTS
+(DIO8)              9                   None                Pin sleep control,DTR
+(DIO9)              13                  None                On/Sleep indicator
+DIO10               6                   P0                  Received Signal Strength Indicator (RSSI)
+DIO11               7                   P1                  
+DIO12               4                   P2                  
+```
+
+
