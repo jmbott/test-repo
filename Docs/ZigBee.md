@@ -11,7 +11,8 @@ There are many different ways to connect to a XBee Radio. One that works with bo
 ls /dev/tty.*
 ```
 
-* It should appear and look something like this `ex: /dev/tty.usbserial-FTH144JL`
+* It should appear and look something like this ex: `
+* /dev/tty.usbserial-FTH144JL`
 * Then use screen and the baudrate to connect through terminal.
 
 ```
@@ -47,3 +48,30 @@ ATWR  >>  This writes the complete configuration to firmware so it sticks throug
 ATMY  >>  This shows the current 16-bit addresses. The coordinator assigns this address dynamically
           so it can be displayed but not set for Series 2 ZigBee radios. 
 ```
+
+* The response from ATSH is the Coordinator address. That is always '0013A200'.
+* The response from ATSL is the Router address. This is different for every radio. ex: `40B96CF2`. 
+* Every network must have a coordinator radio and not multiple. 
+* The coordinator must be configured. 
+
+```
+|Function|                    |Command|           |Parameter|
+PAN ID                        ATID                2001 (anything from 0 to FFFF)
+Destination address high      ATDH                0013A200
+Destination address low       ATDL                <Router Address>
+```
+
+* Use the `ATWR` command to save the configuration
+
+* The router must also be configured
+
+```
+|Function|                    |Command|           |Parameter|
+PAN ID                        ATID                2001 (Same as all other radios in the network)
+Destination address high      ATDH                0013A200
+Destination address low       ATDL                <Coordinator Address>
+```
+
+* To check the edited values use the commands without parameters. 
+* Remember to save before disconnecting. 
+
