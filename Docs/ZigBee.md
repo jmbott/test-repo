@@ -98,4 +98,39 @@ DIO11               7                   P1
 DIO12               4                   P2                  
 ```
 
+* To configure the XBee for direct input(s) and output(s) you must use AT commands. 
+
+```
+|Command Sets|      |Purpose|
+ATD0 to ATD7        Configures pins 0-7 (8 and 9 not supported currently)
+ATP0 to ATP1        Configures pins 10-11 (12 is not currently supported)
+ATIR                Sets I/O sample rate (miliseconds in hex)
+                    ex: 10 times/second = every 100ms = 0x64 = ATIR64
+                    To disable periodic sampling set ATIR to zero.
+ATWR                Saves configuration
+```
+
+* Each command set needs a setting code directly following it for something to be set. 
+ * for ATIR that setting code is a hex number. For ATDx or ATPx it is as follows
+
+```
+|Setting Code|      |Purpose|
+0                   Disables I/O on selected pin
+1                   Built in function, if available on that pin
+2                   Analog input, only on pins D0-D3
+3                   Digital input
+4                   Digital output, low (0 volts)
+5                   Digital output, high (3.3 volts)
+```
+
+Note: Analog inputs top out at 1.2V. All inputs higher than 1.2 volts will be read as a 1.2 volt signal.
+
+* There are a few other advanced commands. 
+
+```
+|Command|           |Purpose|
+AT%V                Returns current supply voltage (Useful to monitor battery status)
+ATPR                Configures the 30K pullup resistors (binary value sets) (By default all enabled)
+ATIC                Configures digital I/O pins to monitor for changes in state.
+```
 
