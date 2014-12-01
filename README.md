@@ -14,7 +14,7 @@ Note `code` inline with text.
 Or
 
 ```
-Code seperated
+Code separated
 ```
 
 From the rest.
