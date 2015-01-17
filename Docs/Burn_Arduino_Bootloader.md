@@ -47,3 +47,9 @@ This will take a few minutes and then your set
  4. Attempting to use the programee's Serial port
  
 Note: this is possible for many other configurations with slight changes. 
+
+References:
+
+* http://arduino.cc/en/Tutorial/ArduinoISP
+* https://learn.adafruit.com/arduino-tips-tricks-and-techniques/arduinoisp
+* http://www.instructables.com/id/How-to-use-Arduino-Mega-2560-as-Arduino-isp/?ALLSTEPS
