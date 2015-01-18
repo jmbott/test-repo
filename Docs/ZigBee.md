@@ -75,6 +75,20 @@ Destination address low       ATDL                <Coordinator Address>
 * To check the edited values use the commands without parameters. 
 * Remember to save before disconnecting. 
 
+## Updateing XBee Firmware
+
+Before you can connect your XBee radios you have to update the firmware appropriately. 
+
+Unfortunately you have to use a seperate program to update the XBee firmware. This will allow you to conv=figure your device as a coordinator or a router. Fortunately it is now available for OSX. 
+
+* Download and install X-CTU
+* Open the program and go to the Radio Configuration Tab
+* Add the device attached to the serial port, ex: usbserial*
+* Once the device is found select it and select update firmware. 
+* Update to the latest firmware
+ * One device must be a coordinator and so on to form your mesh network
+* Once the update is complete you can exit the software.
+
 ## XBee I/O Features
 
 The XBee radios can be used alone or with an additional microcomputer. When used alone they have limited capabilities. They have no PWM outputs but have a few pins that can be used as digintal inputs, digital outputs, and analog inputs. 
