@@ -75,7 +75,7 @@ Destination address low       ATDL                <Coordinator Address>
 * To check the edited values use the commands without parameters. 
 * Remember to save before disconnecting. 
 
-## Updateing XBee Firmware
+## Updating XBee Firmware
 
 Before you can connect your XBee radios you have to update the firmware appropriately. 
 
