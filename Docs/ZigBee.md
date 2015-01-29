@@ -79,7 +79,7 @@ Destination address low       ATDL                <Coordinator Address>
 
 Before you can connect your XBee radios you have to update the firmware appropriately. 
 
-Unfortunately you have to use a seperate program to update the XBee firmware. This will allow you to conv=figure your device as a coordinator or a router. Fortunately it is now available for OSX. 
+Unfortunately you have to use a seperate program to update the XBee firmware. This will allow you to configure your device as a coordinator or a router. Fortunately it is now available for OSX. 
 
 * Download and install X-CTU
 * Open the program and go to the Radio Configuration Tab
